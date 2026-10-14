@@ -1,0 +1,82 @@
+#courses-section {
+  scroll-margin-top: 80px;
+}
+
+.courses-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 70px 20px;
+  background-color: var(--afirmasus-bg);
+}
+
+.courses-heading {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--afirmasus-text-primary);
+  margin-bottom: 24px;
+}
+
+.courses-description {
+  color: var(--afirmasus-text-secondary);
+  font-size: 1.1rem;
+  max-width: 450px;
+  margin: 0 auto 70px auto;
+}
+
+.courses-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  [nz-col] {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.course-card {
+  border-radius: 16px;
+  background-color: var(--afirmasus-surface);
+  border-color: var(--afirmasus-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  ::ng-deep .ant-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--afirmasus-text-primary);
+    margin-bottom: 16px;
+    text-align: left;
+  }
+}
+
+.course-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px var(--afirmasus-float-shadow-color);
+}
