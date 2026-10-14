@@ -1,0 +1,19 @@
+<section id="aboutus-section" class="aboutus-section">
+  <h2 class="aboutus-heading">{{ 'layout.navAboutUs' | translate }}</h2>
+
+  <p class="aboutus-description" [innerHTML]="'aboutus.description' | translate"></p>
+
+  <div class="aboutus-container">
+    <a href="https://instagram.com/afirmasusunivasf" target="_blank" rel="noopener noreferrer" class="instagram-link">
+      <nz-card [nzBordered]="true" nzHoverable class="instagram-card">
+        <div class="card-content">
+          <nz-icon nzType="instagram" nzTheme="outline" class="instagram-icon"></nz-icon>
+          <div class="instagram-info">
+            <h3>{{ 'aboutus.instagramTitle' | translate }}</h3>
+            <p>{{ 'aboutus.instagramHandle' | translate }}</p>
+          </div>
+        </div>
+      </nz-card>
+    </a>
+  </div>
+</section>
