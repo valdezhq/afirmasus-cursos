@@ -1,0 +1,115 @@
+<nz-layout class="layout">
+  <!-- Navbar -->
+  <nz-header class="header" role="banner">
+    <div class="logo">
+      <a routerLink="/home" class="logo-link">
+        <img
+          [src]="themeService.isDark() ? 'assets/afirma-logo.png' : 'assets/afirma-logo.png'"
+          [alt]="'layout.logoAlt' | translate"
+          class="afirmasus-logo"
+        />
+      </a>
+    </div>
+
+    <nav class="nav" [attr.aria-label]="'layout.mainNavAria' | translate">
+      <ul nz-menu [nzTheme]="themeService.isDark() ? 'dark' : 'light'" nzMode="horizontal" class="header-nav">
+        <li nz-menu-item [nzSelected]="activeSection() === 'courses-section'">
+          <a routerLink="/home" fragment="courses-section">{{ 'layout.navCourses' | translate }}</a>
+        </li>
+        <li nz-menu-item [nzSelected]="activeSection() === 'aboutus-section'">
+          <a routerLink="/home" fragment="aboutus-section">{{ 'layout.navAboutUs' | translate }}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <nz-switch
+        class="theme-switch"
+        nz-tooltip
+        [nzTooltipTitle]="themeService.isDark() ? ('layout.switchToLightTheme' | translate) : ('layout.switchToDarkTheme' | translate)"
+        [attr.aria-label]="'layout.themeToggle' | translate"
+        [nzCheckedChildren]="moonTemplate"
+        [nzUnCheckedChildren]="sunTemplate"
+        [ngModel]="themeService.isDark()"
+        (ngModelChange)="setTheme($event)"
+      >
+        <ng-template #sunTemplate>
+          <nz-icon nzType="sun" nzTheme="outline" aria-hidden="true"></nz-icon>
+        </ng-template>
+        <ng-template #moonTemplate>
+          <nz-icon nzType="moon" nzTheme="outline" aria-hidden="true"></nz-icon>
+        </ng-template>
+      </nz-switch>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        (click)="toggleMobileNav()"
+        [attr.aria-label]="'layout.mobileNavAria' | translate"
+      >
+        <nz-icon [nzType]="mobileNavOpen() ? 'close' : 'menu'" nzTheme="outline" />
+      </button>
+    </div>
+  </nz-header>
+
+  <!-- Mobile Nav -->
+  @if (mobileNavOpen()) {
+    <div class="mobile-nav-overlay" (click)="closeMobileNav()"></div>
+    <div class="mobile-nav">
+      <ul nz-menu [nzTheme]="themeService.isDark() ? 'dark' : 'light'" nzMode="vertical" (click)="closeMobileNav()" class="mobile-nav-menu">
+        <li nz-menu-item [nzSelected]="activeSection() === 'courses-section'">
+          <a routerLink="/home" fragment="courses-section">{{ 'layout.navCourses' | translate }}</a>
+        </li>
+        <li nz-menu-item [nzSelected]="activeSection() === 'aboutus-section'">
+          <a routerLink="/home" fragment="aboutus-section">{{ 'layout.navAboutUs' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+  }
+
+  <!-- Main Content -->
+  <nz-content>
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+  </nz-content>
+
+  <!-- Footer -->
+  <nz-footer class="footer-wrapper" role="contentinfo">
+    <div class="footer-content">
+      <p>{{ 'layout.footerRights' | translate }}</p>
+      <div class="social-links">
+        <a href="https://github.com/valdezhq" target="_blank" rel="noopener noreferrer">
+          <nz-icon nzType="github" nzTheme="outline"></nz-icon> {{ 'layout.footerGithub' | translate }}
+        </a>
+      </div>
+    </div>
+  </nz-footer>
+
+  <!-- Language Switcher -->
+  <button
+    type="button"
+    nz-button
+    nzShape="circle"
+    class="lang-switch-btn"
+    nz-dropdown
+    [nzDropdownMenu]="langMenu"
+    nzTrigger="click"
+    nzPlacement="topLeft"
+    [attr.aria-label]="'layout.langAlt' | translate"
+  >
+    <nz-icon
+      aria-hidden="true"
+      nzType="global"
+      nzTheme="outline"
+      nz-tooltip
+      [nzTooltipTitle]="'layout.changeLanguage' | translate"
+    />
+  </button>
+  <nz-dropdown-menu #langMenu="nzDropdownMenu">
+    <ul nz-menu>
+      <li nz-menu-item (click)="switchLang('pt')">Português</li>
+      <li nz-menu-item (click)="switchLang('es')">Español</li>
+    </ul>
+  </nz-dropdown-menu>
+</nz-layout>
