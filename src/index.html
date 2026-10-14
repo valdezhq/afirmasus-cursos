@@ -2,10 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>AfirmasusCursos</title>
+    <title>AfirmaSUS - Cursos</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/afirma-logo.png" />
+
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('theme-dark');
+          var l = document.createElement('link');
+          l.rel = 'stylesheet'; l.id = 'theme-dark'; l.href = 'dark.css';
+          document.head.appendChild(l);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <app-root></app-root>
