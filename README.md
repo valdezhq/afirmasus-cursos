@@ -1,59 +1,25 @@
-# AfirmasusCursos
+# AfirmaSUS - Plataforma de Cursos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.2.
+Uma landing page desenvolvida para centralizar e facilitar o acesso aos cursos sugeridos durante as oficinas do projeto **AfirmaSUS - Sertão em Flor**.
 
-## Development server
+## Sobre o Projeto
 
-To start a local development server, run:
+O **AfirmaSUS** é um projeto de pesquisa, ensino, extensão e cultura da Universidade Federal do Vale do São Francisco (Univasf), vinculado ao Ministério da Saúde. O projeto realiza ações de extensão, pesquisa, ensino e cultura voltadas à promoção da saúde e direitos da população LGBTQIAPN+ e aos povos de terreiro.
 
-```bash
-ng serve
-```
+Esta aplicação web foi construída de forma independente para auxiliar os participantes das oficinas, oferecendo um catálogo de fácil acesso a cursos fundamentais, como letramento de gênero, políticas de saúde integral e equidade no SUS.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- **Catálogo de Cursos:** Acesso rápido aos materiais e cursos sugeridos nas oficinas.
+- **Internacionalização (i18n):** Suporte nativo para Português (PT) e Espanhol (ES).
+- **Dark/Light Mode:** Alternância de tema perfeitamente integrada à interface.
+- **Design Responsivo:** Layout adaptado para visualização em computadores, tablets e smartphones.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Tecnologias Utilizadas
 
-```bash
-ng generate component component-name
-```
+- **[Angular](https://angular.dev/)** (Standalone Components)
+- **[NG-Zorro](https://ng.ant.design/)** (Biblioteca de componentes de UI)
+- **[LESS](https://lesscss.org/)** (Pré-processador CSS)
+- **[ngx-translate](https://github.com/ngx-translate/core)** (Gestão de idiomas)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Disponível em https://valdezhq.github.io/afirmasus-cursos/
