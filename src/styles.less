@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+
+@import 'ng-zorro-antd/ng-zorro-antd.less';
+@primary-color: #f32b98;
+
+:root {
+  --afirmasus-primary-color: @primary-color;
+  --afirmasus-primary-color-hover: @primary-color-hover;
+  --afirmasus-primary-color-active: @primary-color-active;
+  --afirmasus-primary-white: #ffffff;
+  --afirmasus-bg: #f5f5f5;
+  --afirmasus-surface: #ffffff;
+  --afirmasus-text-primary: #333333;
+  --afirmasus-text-secondary: #666666;
+  --afirmasus-text-tertiary: #999999;
+  --afirmasus-border: #eaeaea;
+  --afirmasus-header-shadow-color: rgba(0, 0, 0, 0.05);
+  --afirmasus-float-shadow-color: rgba(0, 0, 0, 0.1);
+  --afirmasus-overlay: rgba(0, 0, 0, 0.4);
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--afirmasus-bg);
+  color: var(--afirmasus-text-primary);
+}
