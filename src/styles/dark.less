@@ -1,0 +1,38 @@
+/* Dark mode styles */
+
+@import 'ng-zorro-antd/ng-zorro-antd.dark.less';
+@primary-color: #f32b98;
+
+:root {
+  --afirmasus-primary-color: @primary-color;
+  --afirmasus-primary-color-hover: @primary-color-hover;
+  --afirmasus-primary-color-active: @primary-color-active;
+  --afirmasus-primary-white: #ffffff;
+  --afirmasus-bg: #121212;
+  --afirmasus-surface: #1e1e1e;
+  --afirmasus-text-primary: #f0f0f0;
+  --afirmasus-text-secondary: #b3b3b3;
+  --afirmasus-text-tertiary: #888888;
+  --afirmasus-border: #2e2e2e;
+  --afirmasus-header-shadow-color: rgba(0, 0, 0, 0.4);
+  --afirmasus-float-shadow-color: rgba(0, 0, 0, 0.6);
+  --afirmasus-overlay: rgba(0, 0, 0, 0.6);
+}
+
+html,
+body {
+  background-color: var(--afirmasus-bg);
+  color: var(--afirmasus-text-primary);
+}
+
+/* Override NG-ZORRO dark menu active state */
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item-selected {
+  background-color: transparent !important;
+  color: var(--afirmasus-primary-color) !important;
+  border-bottom: 2px solid var(--afirmasus-primary-color) !important;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+  background-color: transparent !important;
+  color: var(--afirmasus-primary-color-hover) !important;
+}
