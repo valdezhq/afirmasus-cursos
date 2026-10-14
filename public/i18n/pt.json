@@ -1,0 +1,45 @@
+{
+  "layout": {
+    "logoAlt": "Logo AfirmaSUS Sertão em Flor",
+    "mainNavAria": "Navegação principal",
+    "navCourses": "Cursos",
+    "navAboutUs": "Sobre Nós",
+    "mobileNavAria": "Abrir menu mobile",
+    "themeToggle": "Alternar tema",
+    "switchToLightTheme": "Mudar para tema claro",
+    "switchToDarkTheme": "Mudar para tema escuro",
+    "langAlt": "Alterar idioma",
+    "changeLanguage": "Alterar idioma",
+    "footerRights": "Desenvolvido por Luna Valdez © 2026",
+    "footerGithub": "GitHub"
+  },
+  "courses": {
+    "heading": "Do Preconceito ao Acolhimento",
+    "description": "Cursos gratuitos e online para profissionais, estudantes e para toda a comunidade que desejam promover o cuidado integral, o respeito e a garantia de direitos da população LGBTQIAPN+.",
+    "direitos": {
+      "name": "Promoção e Defesa dos Direitos das Pessoas LGBTQIA+",
+      "imgAlt": "Capa do curso Promoção e Defesa dos Direitos das Pessoas LGBTQIA+"
+    },
+    "letramento": {
+      "name": "Letramento de Gênero e Diversidade Sexual",
+      "imgAlt": "Capa do curso Letramento de Gênero e Diversidade Sexual"
+    },
+    "pnsi": {
+      "name": "Política Nacional de Saúde Integral LGBT",
+      "imgAlt": "Capa do curso Política Nacional de Saúde Integral de Lésbicas, Gays, Bissexuais, Travestis e Transexuais, com silhuetas de casais e pessoas em faixas coloridas"
+    },
+    "acesso": {
+      "name": "Promoção do acesso e equidade no âmbito da APS",
+      "imgAlt": "Capa do curso Promoção do Acesso e Equidade no Âmbito da Atenção Primária à Saúde para o Cuidado Integral da População LGBTQIAPN+, sobre fundo com formas abstratas em rosa e azul"
+    },
+    "saude": {
+      "name": "Promoção da Saúde das Pessoas LGBTQIA+",
+      "imgAlt": "Capa do curso Promoção da Saúde das Pessoas LGBTQIA+, com ilustração de um profissional de saúde atendendo um paciente em um consultório"
+    }
+  },
+  "aboutus": {
+    "description": "O <strong>AfirmaSUS - Sertão em Flor</strong> é um projeto da Universidade Federal do Vale do São Francisco, vinculado ao Ministério da Saúde. Realizamos ações de extensão, pesquisa, ensino e cultura voltadas à população LGBTQIAPN+ e aos povos de terreiro.",
+    "instagramTitle": "Siga nosso Instagram",
+    "instagramHandle": "@afirmasusunivasf"
+  }
+}

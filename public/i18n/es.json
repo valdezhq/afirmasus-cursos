@@ -1,0 +1,45 @@
+{
+  "layout": {
+    "logoAlt": "Logo AfirmaSUS Sertão em Flor",
+    "mainNavAria": "Navegación principal",
+    "navCourses": "Cursos",
+    "navAboutUs": "Quiénes somos",
+    "mobileNavAria": "Abrir menú móvil",
+    "themeToggle": "Cambiar tema",
+    "switchToLightTheme": "Cambiar a tema claro",
+    "switchToDarkTheme": "Cambiar a tema oscuro",
+    "langAlt": "Cambiar idioma",
+    "changeLanguage": "Cambiar idioma",
+    "footerRights": "Desarrollado por Luna Valdez © 2026",
+    "footerGithub": "GitHub"
+  },
+  "courses": {
+    "heading": "Del Prejuicio a la Acogida",
+    "description": "Cursos gratuitos y en línea para profesionales, estudiantes y toda la comunidad que desean promover el cuidado integral, el respeto y la garantía de los derechos de la población LGBTQIAPN+.",
+    "direitos": {
+      "name": "Promoción y Defensa de los Derechos de las Personas LGBTQIA+",
+      "imgAlt": "Portada del curso Promoción y Defensa de los Derechos de las Personas LGBTQIA+"
+    },
+    "letramento": {
+      "name": "Alfabetización de Género y Diversidad Sexual",
+      "imgAlt": "Portada del curso Alfabetización de Género y Diversidad Sexual"
+    },
+    "pnsi": {
+      "name": "Política Nacional de Salud Integral LGBT",
+      "imgAlt": "Portada del curso Política Nacional de Salud Integral de Lesbianas, Gais, Bisexuales, Travestis y Transexuales, con siluetas de parejas y personas sobre franjas de colores"
+    },
+    "acesso": {
+      "name": "Promoción del acceso y la equidad en el ámbito de la APS",
+      "imgAlt": "Portada del curso Promoción del Acceso y la Equidad en el Ámbito de la Atención Primaria de Salud para el Cuidado Integral de la Población LGBTQIAPN+, sobre un fondo con formas abstractas en rosa y azul"
+    },
+    "saude": {
+      "name": "Promoción de la Salud de las Personas LGBTQIA+",
+      "imgAlt": "Portada del curso Promoción de la Salud de las Personas LGBTQIA+, con la ilustración de un profesional de la salud atendiendo a un paciente en un consultorio"
+    }
+  },
+  "aboutus": {
+    "description": "<strong>AfirmaSUS - Sertão em Flor</strong> es un proyecto de la Universidad Federal del Valle del São Francisco, vinculado al Ministerio de Salud de Brasil. Realizamos acciones de extensión, investigación, enseñanza y cultura dirigidas a la población LGBTQIAPN+ y a los pueblos de terreiro.",
+    "instagramTitle": "Sigue nuestro Instagram",
+    "instagramHandle": "@afirmasusunivasf"
+  }
+}
